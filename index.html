@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div>
-                <a><img src="./img/icon-kakao.png" title="카카오톡" class="sharebtn_custom"/></a>
+                <a href="javascript:setShare()"><img src="./img/icon-kakao.png" title="카카오톡" class="sharebtn_custom"/></a>
             </div>
         </div>
     </section>
@@ -86,7 +86,6 @@
             var resultAlt = resultImg.firstElementChild.alt; 
             const shareTitle = '나의 개발자 유형은 무엇일까? 나의 개발자 유형을 확인해보고 공유해보자!!';
             const shareDes=infoList[resultAlt].name;
-            
             const shareImage= 'https://likeshiba-developertypetest.netlify.app' + 'img/title_img.png';
             const shareURL = 'https://likeshiba-developertypetest.netlify.app';
             Kakao.Link.sendDefault({
